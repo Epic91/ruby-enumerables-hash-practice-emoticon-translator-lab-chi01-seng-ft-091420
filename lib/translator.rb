@@ -1,6 +1,12 @@
 # require modules here
+require "yaml"
+#require "pry"
 
-def load_library
+def load_library(file_path)
+  new_hash = {}
+  #binding.pry
+
+
   # code goes here
 end
 
