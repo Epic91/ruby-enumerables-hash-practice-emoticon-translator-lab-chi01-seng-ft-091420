@@ -4,7 +4,7 @@ require "yaml"
 
 def load_library(file_path)
   new_hash = {}
-  emoticons.each do |key,value|
+  emoticons.each do |key|
     new_hash[key] = {}
 
   #binding.pry
