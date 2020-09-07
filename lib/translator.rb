@@ -22,5 +22,6 @@ end
 
 def get_english_meaning(file_path, emoticons)
   library = load_library(file_path)
+  library[key][:english] == emoticon
   # code goes here
 end
