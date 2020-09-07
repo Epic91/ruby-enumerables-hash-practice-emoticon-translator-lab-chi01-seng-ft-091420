@@ -22,6 +22,8 @@ end
 
 def get_english_meaning(file_path, emoticons)
   library = load_library(file_path)
-  library[key][:english] == emoticon
+  emoticon = library.keys.find do |key|
+    library[key][:english] == emoticon
+  end
   # code goes here
 end
