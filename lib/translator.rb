@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+require "pry"
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
@@ -24,6 +25,7 @@ def get_english_meaning(file_path, emoticons)
   library = load_library(file_path)
   emoticon = library.keys.find do |key|
     library[key][:english] == emoticon
+    binding.pry
   end
   emoticon ? library[emoticon][:japanese] : "Sorry, that emoticon was not found"
   # code goes here
